@@ -1,4 +1,5 @@
 # Deploy a Production Ready Kubernetes Cluster
+# В данном форке Kubespray добавлена поддержка Red OS.
 
 ![Kubernetes Logo](https://raw.githubusercontent.com/kubernetes-sigs/kubespray/master/docs/img/kubernetes-logo.png)
 
@@ -22,7 +23,7 @@ Ensure you have installed Docker then
 ```ShellSession
 docker run --rm -it --mount type=bind,source="$(pwd)"/inventory/sample,dst=/inventory \
   --mount type=bind,source="${HOME}"/.ssh/id_rsa,dst=/root/.ssh/id_rsa \
-  quay.io/kubespray/kubespray:v2.27.0 bash
+  khandv/kubespray:v2.27.0-RED bash
 # Inside the container you may now run the kubespray playbooks:
 ansible-playbook -i /inventory/inventory.ini --private-key /root/.ssh/id_rsa cluster.yml
 ```

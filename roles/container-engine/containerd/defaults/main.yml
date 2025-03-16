@@ -97,6 +97,8 @@ containerd_limit_mem_lock: "infinity"
 
 # OS distributions that already support containerd
 containerd_supported_distributions:
+  - "RED"
+  - "REDOS"
   - "CentOS"
   - "OracleLinux"
   - "RedHat"

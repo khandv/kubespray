@@ -117,6 +117,7 @@ ntp_timezone: ""
 
 # Currently known os distributions
 supported_os_distributions:
+  - 'RED'
   - 'RedHat'
   - 'CentOS'
   - 'Fedora'
